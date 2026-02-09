@@ -2,3 +2,10 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     color: #09f;
 }
+
+div {
+    max-width: 500px;
+    font-size: 32px;
+    margin: 0 auto;
+    
+}

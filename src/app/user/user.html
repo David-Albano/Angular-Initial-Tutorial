@@ -1,0 +1,36 @@
+<section>
+
+    @if (isLoggedIn) {
+        <h1>Welcome {{username}}!</h1>
+        <img
+            (click)="greet()"
+            alt="photo"
+            src="https:github.com/david-albano.png"
+        >
+
+        <button (click)="isLoggedIn=false">Log out</button>
+        
+        <app-games
+            (addFavoriteEvent)="getFavorite($event)"
+            username="{{username}}">
+        </app-games>
+
+        @if (favGame !== '') {
+            <div>
+                <p>
+                    {{username}} has added <i>"{{favGame}}"</i> to his favorite list
+                </p>
+            </div>
+        }
+    
+    } @else {
+        <h1>Please Sign in!</h1>
+        <button (click)="isLoggedIn = true">Sign In</button>
+    }
+
+
+</section>
+
+
+
+

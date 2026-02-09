@@ -1,4 +1,58 @@
 <!-- <router-outlet /> -->
 
-<h1>Hola Angular</h1>
+<app-user/>
 
+<div>
+  <h1>What Do You Think About Angular?</h1>
+  
+  <p>
+    Angular is an incredibly powerful and comprehensive framework for building dynamic web applications that has truly
+    revolutionized the way developers approach building modern, scalable, and maintainable user interfaces across the
+    entire application stack. With its component-based architecture, Angular provides developers with a robust foundation
+    for creating reusable, modular, and well-organized code that can easily grow and adapt as projects become more
+    complex and demanding over time.
+  </p>
+
+  <p>
+    The framework's two-way data binding capabilities create a seamless connection between the view and the model,
+    allowing developers to write less boilerplate code and focus more on the actual business logic and functionality of
+    their applications. Angular's dependency injection system is elegantly designed to promote loose coupling between
+    components and services, making it incredibly easy to test and maintain code throughout the entire development
+    lifecycle.
+  </p>
+
+  <p>
+    The TypeScript integration is phenomenal, offering developers excellent tooling support, type safety, and intelligent
+    code completion that helps catch errors before they even make it to runtime, significantly improving the overall
+    development experience and productivity. Angular's routing capabilities are comprehensive and flexible, allowing
+    developers to build single-page applications with sophisticated navigation patterns and lazy-loaded modules that
+    optimize performance and user experience dramatically.
+  </p>
+
+  <p>
+    The reactive programming paradigm, built on RxJS and Observables, provides powerful asynchronous patterns that make
+    handling complex data flows and asynchronous operations much more manageable and elegant compared to traditional
+    callback-based approaches. Angular CLI is an absolute game-changer, automating many common development tasks and
+    providing a standardized project structure that helps teams work together more efficiently and effectively.
+  </p>
+
+  <p>
+    The extensive documentation and vibrant community surrounding Angular provide developers with abundant resources,
+    tutorials, and third-party libraries that continuously expand the framework's capabilities. Whether you're building
+    a small personal project or a large enterprise application, Angular's flexibility and power make it an excellent
+    choice for developers who want to create high-quality, performant, and maintainable web applications that stand the
+    test of time.
+  </p>
+
+
+  @defer(on viewport) {
+    <app-comments></app-comments>
+  } @placeholder {
+      <div>
+        <p>Future Comments</p> 
+      </div>
+  } @loading {
+    <p>Loading comments...</p>
+  }
+
+</div>
